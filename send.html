@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Money - PayPal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/send.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="page-title">Send Money</h1>
+        </div>
+
+        <div class="card">
+            <div class="search-container">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" class="search-input" placeholder="Name, email, mobile" id="searchInput"
+                    oninput="handleInput()" onfocus="handleFocus()" onblur="hideDropdown()">
+                <div class="dropdown" id="dropdown"></div>
+            </div>
+            <div class="button-section">
+                <button class="next-btn" id="nextBtn" onclick="goToConfirmation()">Next</button>
+                <a href="#" class="show-contacts">Show all contacts</a>
+            </div>
+        </div>
+
+        <div class="card" style="background: #f5f5f5;padding: 20px 0;box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);">
+            <h2 class="section-title">More options</h2>
+
+            <a href="#" class="option-item">
+                <div class="option-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="option-text">Pool money</div>
+            </a>
+
+            <a href="#" class="option-item">
+                <div class="option-icon">
+                    <i class="fas fa-arrows-split-up-and-left"></i>
+                </div>
+                <div class="option-text">Split a bill</div>
+            </a>
+
+            <a href="#" class="option-item">
+                <div class="option-icon">
+                    <i class="fas fa-gift"></i>
+                </div>
+                <div class="option-text">Send a digital gift card</div>
+            </a>
+        </div>
+
+        <div class="bottom-nav">
+            <a href="index.html" class="nav-item active">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-wallet"></i>
+                <span>Wallet</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-credit-card"></i>
+                <span>Payments</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-user"></i>
+                <span>Profile</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="js/send.js"></script>
+</body>
+
+</html>

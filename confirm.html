@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Money - PayPal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/confirm.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <button class="back-btn" onclick="goBack()">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <h1 class="page-title">Send money</h1>
+        </div>
+
+        <div class="card recipient-section">
+            <div class="recipient-avatar" id="recipientAvatar"></div>
+            <div class="recipient-username" id="recipientUsername"></div>
+
+            <div class="amount-container">
+                <input type="text" class="amount-input" placeholder="0.00" id="amountInput" oninput="handleAmountInput()">
+                <span class="currency">EUR</span>
+            </div>
+            
+            <button class="send-btn" id="sendBtn" onclick="sendMoney()">Send</button>
+        </div>
+
+        <!-- <div class="card">
+            
+        </div> -->
+
+        <div class="terms-section">
+            <a href="#" class="terms-link">Terms and Conditions</a>
+            <div class="disclaimer">
+                By sending money, you agree to PayPal's user agreement and privacy policy.
+            </div>
+        </div>
+    </div>
+
+    <script src="js/confirm.js"></script>
+
+</body>
+
+</html>
