@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900;950&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -117,7 +118,8 @@ body {
     padding: 16px;
     border-radius: 8px;
     border: none;
-    font-size: 18px;
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
     font-weight: 1000;
     cursor: pointer;
     transition: all 0.2s ease;
