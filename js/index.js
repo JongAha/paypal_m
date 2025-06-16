@@ -107,6 +107,6 @@ window.onload = function () {
     // Check if we just completed a transaction
     if (localStorage.getItem('showSuccessToast') === 'true') {
         localStorage.removeItem('showSuccessToast');
-        setTimeout(showSuccessToast, 500);
+        showSuccessToast();
     }
 }

@@ -136,6 +136,7 @@ body {
 .btn-primary {
     background: #0070f3;
     color: white;
+    font-weight: bold;
 }
 
 .btn-primary:hover {
@@ -301,6 +302,7 @@ body {
 
 .toast {
     position: fixed;
+    width: 85%;
     top: 20px;
     left: 16px;
     right: 16px;
