@@ -124,10 +124,10 @@ body {
 
 .btn {
     flex: 1;
-    padding: 14px 24px;
+    padding: 10px 24px;
     border-radius: 24px;
     border: none;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     cursor: pointer;
     transition: all 0.2s ease;
@@ -136,7 +136,7 @@ body {
 .btn-primary {
     background: #0070f3;
     color: white;
-    font-weight: bold;
+    font-weight: 1000;
 }
 
 .btn-primary:hover {

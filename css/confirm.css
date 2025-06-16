@@ -118,7 +118,7 @@ body {
     border-radius: 8px;
     border: none;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 1000;
     cursor: pointer;
     transition: all 0.2s ease;
     margin-bottom: 10px;
