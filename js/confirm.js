@@ -122,5 +122,14 @@ window.onload = function () {
     document.getElementById('recipientAvatar').textContent = generateAvatarText(currentRecipient);
 
     // Focus on amount input
-    document.getElementById('amountInput').focus();
+    const amountInput = document.getElementById('amountInput');
+    amountInput.focus();
+
+    // 只监听 amountInput 的 blur 事件
+    amountInput.addEventListener('blur', function () {
+        let value = amountInput.value;
+        if (value && !isNaN(value)) {
+            amountInput.value = parseFloat(value).toFixed(2);
+        }
+    });
 }
